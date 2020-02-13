@@ -1,0 +1,71 @@
+.video-list {
+  margin-top: 0;
+}
+
+.video-list__title {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.video-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 16px 30px;
+  padding: 40px 59px 42px;
+  height: 310px;
+
+  &--balloon {
+    background: #f9fafc url("../img/balloon_mobile.jpg") 50% 0 no-repeat;
+  }
+
+  &--photosession {
+    background: #1f2729 url("../img/photosession_mobile.jpg") 50% 0 no-repeat;
+
+    .video-list__title {
+      color: $white;
+    }
+  }
+
+  &--bird {
+    background: #0b0d0a url("../img/bird-show_mobile.jpg") 50% 0 no-repeat;
+
+    .video-list__title {
+      color: $white;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-list__item {
+    width: 370px;
+    min-height: 479px;
+    margin: 0;
+    margin-bottom: 33px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--balloon {
+      padding: 48px 67px 30px;
+      background-image: url("../img/balloon_desktop.jpg");
+    }
+
+    &--photosession {
+      padding: 40px 61px 40px;
+      background-image: url("../img/photosession_desktop.jpg");
+    }
+
+    &--bird {
+      padding: 40px 87px 40px;
+      background-image: url("../img/bird-show_desktop.jpg");
+    }
+  }
+}

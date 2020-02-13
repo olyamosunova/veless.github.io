@@ -1,0 +1,23 @@
+.notes {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(21, 21, 30, 0.5);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 15px;
+
+    background-image: url("../img/flag-icon.svg");
+  }
+}

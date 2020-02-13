@@ -1,0 +1,65 @@
+.latest-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 374px;
+  padding: 27.5px 16px 18.75px;
+  text-align: center;
+  color: $white;
+
+  background: url("../img/hotelBg_mobile.jpg");
+}
+
+.latest-news__lable {
+  padding: 4px 14px 6px 15px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+
+  background-color: $attention-color;
+}
+
+.latest-news__title {
+  max-width: 100%;
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.latest-news__text {
+  max-width: 100%;
+  margin: 0;
+}
+
+.latest-news__slider {
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .latest-news {
+    min-height: 464px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("../img/hotelBg_desktop.jpg");
+  }
+
+  .latest-news__title {
+    font-size: 72px;
+    line-height: 85px;
+  }
+
+  .latest-news__text {
+    margin: 0 483px;
+
+    order: 2;
+  }
+}

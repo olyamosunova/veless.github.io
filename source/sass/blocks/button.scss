@@ -1,0 +1,41 @@
+.button {
+  position: relative;
+  padding: 17px 59px 15px 30px;
+  width: 170px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: $white;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  background-color: rgba($black, 0.7);
+  border: 2px solid $border-color;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 31px;
+    width: 16px;
+    height: 16px;
+
+    background: url("../img/shape-icon.svg");
+  }
+
+  &:hover,
+  &:active {
+    background-color: rgba($attention-color, 0.7);
+  }
+
+  &--balloon {
+    background-color: $attention-color;
+    border-color: $attention-color;
+
+    &:hover,
+    &:active {
+      background-color: rgba($black, 0.7);
+    }
+  }
+}

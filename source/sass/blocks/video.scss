@@ -1,0 +1,19 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.video__list {
+  margin: 0;
+  margin-top: 46px;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    position: relative;
+    width: 100%;
+    order: 2;
+  }
+}

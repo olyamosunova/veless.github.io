@@ -1,0 +1,42 @@
+.movie-list {
+  width: 100%;
+}
+.movie-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 175px;
+  padding: 46px 43px 42px;
+
+  &--ballet {
+    background: $black url("../img/ballet_mobile.jpg") 50% 10px no-repeat ;
+  }
+}
+
+.movie-list__title {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $white;
+}
+
+@media (min-width: $desktop-width) {
+  .movie-list__item {
+    min-height: 177px;
+    flex-direction: row;
+    padding: 40px 111px 42px;
+
+    &--ballet {
+      background-image: url("../img/ballet_desktop.jpg");
+      background-position: 50% 0;
+    }
+  }
+
+  .movie-list__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}

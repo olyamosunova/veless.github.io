@@ -1,0 +1,33 @@
+.page-main__title {
+  margin: 0 87px 27.5px;
+
+  font-size: 25px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+
+    font-size: 35px;
+    line-height: 47px;
+  }
+
+  .page-main__wrapper {
+    width: 1173px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 93px auto 0;
+  }
+
+  .page-main__container {
+    width: 772px;
+  }
+}

@@ -1,0 +1,14 @@
+.art {
+  margin-top: 46px;
+}
+
+.art__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .art {
+    margin-top: 92px;
+  }
+}

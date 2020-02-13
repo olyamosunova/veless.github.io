@@ -1,0 +1,109 @@
+.slider-list {
+  display: flex;
+  padding: 0;
+}
+
+.slider-list__link {
+  display: block;
+  width: 9.86px;
+  height: 10px;
+  margin-right: 15.5px;
+  background-color: $white;
+  opacity: 0.4;
+  border-radius: 50%;
+
+  &--active {
+    opacity: 1;
+  }
+
+  &--previous,
+  &--next {
+    display: none;
+  }
+}
+
+.slider-list--video {
+  align-self: center;
+  margin: 15px 0 0;
+
+  .slider-list__link {
+    background-color: $black;
+    opacity: 0.3;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-list {
+    justify-content: center;
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+
+      width: 1px;
+      height: 42px;
+
+      background-color: $white;
+    }
+  }
+
+  .slider-list__link {
+    display: none;
+    margin-right: 0;
+
+    &--previous,
+    &--next {
+      position: relative;
+      display: block;
+      width: 14px;
+      height: 18px;
+
+      border-radius: 0;
+      opacity: 1;
+
+      background: transparent url("../img/rectangle-icon.svg") 0 0;
+
+      &::before {
+        content: "Предудыщуя";
+        position: absolute;
+        top: 7px;
+        left: -449px;
+
+        font-size: 13px;
+        line-height: 15px;
+
+        cursor: auto;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: -363px;
+        width: 64px;
+        height: 1px;
+        background-color: $white;
+
+        cursor: auto;
+      }
+    }
+
+    &--next {
+      margin-left: 43px;
+      transform: scale(-1, 1);
+
+      &::before {
+        content: "Следующая";
+        transform: scale(-1, 1);
+      }
+    }
+  }
+}

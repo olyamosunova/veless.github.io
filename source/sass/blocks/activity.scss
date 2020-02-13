@@ -1,0 +1,31 @@
+.activity {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .activity {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 155px;
+    left: 19px;
+
+    font-family: "Proxima Nova", "Arial", sans-serif;
+    color:  $white;
+
+    opacity: 0.4;
+  }
+
+  .activity__indicators {
+    display: flex;
+    align-items: center;
+  }
+
+  .activity__icon {
+    margin-right: 6px;
+    path {
+      stroke-opacity: 1;
+    }
+  }
+}
